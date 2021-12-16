@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "peras",
+      "shopId": 1
+    },
+    {
+      "id": 2,
+      "name": "peras",
+      "shopId": 1
+    },
+    {
+      "id": 3,
+      "name": "escoba",
+      "shopId": 2
+    },
+    {
+      "id": 4,
+      "name": "detergente",
+      "shopId": 2
+    }
+  ]
+}
