@@ -8,9 +8,9 @@ import { Observable } from 'rxjs';
 })
 export class ItemService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private _http: HttpClient) { }
 
   getItems(): Observable<any>{
-    return this.http.get("http://localhost:3000/products/");
+    return this._http.get("http://localhost:3000/products/");
   }
 }

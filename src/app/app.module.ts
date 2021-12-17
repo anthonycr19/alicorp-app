@@ -1,32 +1,44 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { HttpClientModule } from '@angular/common/http';
+import { AppComponent } from './app.component';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ListItemComponent } from './features/item/list-item/list-item.component';
+import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
 
+import { ListItemComponent } from './features/item/list-item/list-item.component';
+import { DialogComponent } from './features/item/list-item/dialog/dialog.component';
 
+const COMPONENTS = [
+  ListItemComponent
+]
+
+const ENTRYCOMPONENTS = [
+  DialogComponent
+]
+
+const MODULES = [
+  AppRoutingModule,
+  BrowserModule,
+  BrowserAnimationsModule,
+  HttpClientModule,
+  SharedModule,
+]
 
 @NgModule({
   declarations: [
     AppComponent,
-
-    ListItemComponent
+    ...COMPONENTS,
+    ...ENTRYCOMPONENTS,
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    SharedModule
+    ...MODULES
   ],
   exports: [
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[...ENTRYCOMPONENTS]
 })
 export class AppModule { }

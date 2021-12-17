@@ -1,0 +1,8 @@
+.content-dialog{
+    position: relative;
+}
+.btn-close{
+    position: absolute;
+    right: 0;
+    top:0;
+}

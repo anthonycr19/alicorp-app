@@ -10,9 +10,24 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule} from '@angular/material/input';
 import { MatIconModule} from '@angular/material/icon';
-import { MatSelect, MatSelectChange, MatSelectModule } from '@angular/material/select';
+import { MatSelectModule } from '@angular/material/select';
 import { MatPaginatorIntlCro } from 'src/app/features/item/list-item/customClass';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
+const MODULES =[
+  MatTableModule,
+  MatButtonModule,
+  MatFormFieldModule,
+  MatSelectModule,
+  MatDialogModule,
+  MatInputModule,
+  MatButtonModule,
+  MatIconModule,
+  MatPaginatorModule,
+  MatToolbarModule,
+  MatSnackBarModule
+]
 
 @NgModule({
   declarations: [],
@@ -21,16 +36,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   ],
   exports:[
     BrowserAnimationsModule,
-    MatTableModule,
-    MatButtonModule,
-    MatFormFieldModule,
-    MatSelectModule,
-    MatDialogModule,
-    MatInputModule,
-    MatButtonModule,
-    MatIconModule,
-    MatPaginatorModule,
-    MatToolbarModule 
+    ...MODULES
   ],
   providers: [{ provide: MatPaginatorIntl, useClass: MatPaginatorIntlCro}],
 })

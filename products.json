@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "name": "peras",
+      "name": "manzanas",
       "shopId": 1
     },
     {
@@ -18,6 +18,21 @@
     {
       "id": 4,
       "name": "detergente",
+      "shopId": 2
+    },
+    {
+      "id": 5,
+      "name": "Detergente",
+      "shopId": 2
+    },
+    {
+      "id": 6,
+      "name": "Pringles",
+      "shopId": 2
+    },
+    {
+      "id": 7,
+      "name": "Caramelos Frugele",
       "shopId": 2
     }
   ]

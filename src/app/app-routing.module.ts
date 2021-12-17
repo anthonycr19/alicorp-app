@@ -5,8 +5,6 @@ import { ListItemComponent } from './features/item/list-item/list-item.component
 const routes: Routes = [
 
   { path: 'listItems', component: ListItemComponent},
-
-
   { path: '**', pathMatch: 'full', redirectTo: 'listItems'}
 
 ];

@@ -9,21 +9,13 @@ import { ItemService } from './core/services/item.service';
 export class AppComponent {
   title = 'alicorp-app';
 
-  constructor(private itemService: ItemService){
-
-  }
+  constructor(private itemService: ItemService){}
 
   ngOnInit(): void {
     this.initData()
   }
 
   initData(){
-    
-    this.itemService.getItems().subscribe(products=>{
-      
-
-      localStorage.setItem('products', JSON.stringify(products['products']) );
-      console.log("products: ", products);
-    })
+    this.itemService.getItems().subscribe(products => localStorage.setItem('results', JSON.stringify(products)))
   }
 }
