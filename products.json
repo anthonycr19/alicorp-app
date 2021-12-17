@@ -3,37 +3,52 @@
     {
       "id": 1,
       "name": "manzanas",
-      "shopId": 1
+      "shopId": "Manzana Chilena por 12 unidades"
     },
     {
       "id": 2,
       "name": "peras",
-      "shopId": 1
+      "shopId": "Peras por 6 unidades"
     },
     {
       "id": 3,
-      "name": "escoba",
-      "shopId": 2
+      "name": "Escobas",
+      "shopId": "Productos de Limpieza"
     },
     {
       "id": 4,
-      "name": "detergente",
-      "shopId": 2
+      "name": "Detergente",
+      "shopId": "Producto del hogar de limpieza"
     },
     {
       "id": 5,
-      "name": "Detergente",
-      "shopId": 2
+      "name": "Caramelos Frugeles",
+      "shopId": "Bolsa de 100 unidades caramelos"
     },
     {
       "id": 6,
-      "name": "Pringles",
-      "shopId": 2
+      "name": "Aceite Nicolini",
+      "shopId": "Aceite para cocina"
     },
     {
       "id": 7,
-      "name": "Caramelos Frugele",
-      "shopId": 2
+      "name": "Harina Nicolini",
+      "shopId": "Harina sin preparar Nicolini"
+    },
+    {
+      "id": 8,
+      "name": "Harina Nicolini",
+      "shopId": "Harina preparada Nicolini"
+    },
+    {
+      "id": 9,
+      "name": "Pure de papa Nicolini",
+      "shopId": "Pure de papa listo para consumir"
+    },
+    {
+      "id": 10,
+      "name": "Fideos Tornillo Nicolini",
+      "shopId": "Fideos de harina para consumir"
     }
   ]
 }

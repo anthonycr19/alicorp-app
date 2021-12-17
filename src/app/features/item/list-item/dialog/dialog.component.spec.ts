@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { DialogComponent } from './dialog.component';
 
 describe('DialogComponent', () => {
@@ -20,6 +19,6 @@ describe('DialogComponent', () => {
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(component).toBeDefined();
   });
 });

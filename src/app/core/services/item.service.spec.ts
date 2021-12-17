@@ -1,12 +1,28 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed, async } from '@angular/core/testing';
 
 import { ItemService } from './item.service';
 
-describe('ItemService', () => {
-  let service: ItemService;
+import { Router} from '@angular/router';
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({});
+import { Location } from '@angular/common';
+
+import { FormsModule } from '@angular/forms';
+import { RouterTestingModule } from '@angular/router/testing';
+
+
+describe('ItemService', () => {
+  let router: Router;
+  let service: ItemService;
+  let location: Location;
+
+
+  beforeEach(async() => {
+    TestBed.configureTestingModule({
+
+      imports:[
+        FormsModule,
+      ]
+    });
     service = TestBed.inject(ItemService);
   });
 
